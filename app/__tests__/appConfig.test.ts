@@ -1,7 +1,10 @@
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { default as appConfig, getEasProjectId } from '@/app.config';
 import easConfig from '../../eas.json';
 import packageJson from '../../package.json';
 
+const NODE_VERSION = readFileSync(join(process.cwd(), '.nvmrc'), 'utf8').trim();
 const PROJECT_ID = '00000000-0000-0000-0000-000000000000';
 const buildProfiles = easConfig.build as Record<
   string,
@@ -118,13 +121,13 @@ describe('app config EAS project ID', () => {
     );
   });
 
-  it('makes every concrete EAS build profile require a project ID and Node 24', () => {
+  it('makes every concrete EAS build profile require a project ID and the .nvmrc Node version', () => {
     expect(buildProfiles.base).toBeDefined();
 
     for (const [name, profile] of Object.entries(buildProfiles)) {
       if (name === 'base') {
         expect(profile.env?.EAS_REQUIRE_PROJECT_ID).toBe('true');
-        expect(profile.node).toBe('24.22.1');
+        expect(profile.node).toBe(NODE_VERSION);
         continue;
       }
 
