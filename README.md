@@ -34,7 +34,7 @@ A production-ready React Native boilerplate powered by Expo SDK 57 -- clone, ins
 
 ## Prerequisites
 
-- **Node.js** 24+ LTS ([download](https://nodejs.org/))
+- **Node.js** 24.22.1 or later in 24.x LTS (`nvm use`; [download](https://nodejs.org/))
 - **npm** (comes with Node.js)
 - **iOS**: [Xcode](https://developer.apple.com/xcode/) with Command Line Tools and an iOS Simulator runtime installed (macOS only)
 - **Android**: [Android Studio](https://developer.android.com/studio) with an emulator configured
