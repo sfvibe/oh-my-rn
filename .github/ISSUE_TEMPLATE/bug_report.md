@@ -29,7 +29,7 @@ What actually happened.
 
 - OS: [e.g., macOS 15, Windows 11, Ubuntu 24]
 - Node.js: [e.g., 24.x]
-- Expo SDK: [e.g., 57]
+- Expo SDK: [e.g., 58]
 - Device/Simulator: [e.g., iPhone 16 Pro Simulator, Pixel 8 Emulator]
 
 ## Screenshots

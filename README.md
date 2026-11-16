@@ -30,7 +30,7 @@ Fork it. Run it. Ship your idea.
 
 ---
 
-A production-ready React Native boilerplate powered by Expo SDK 57 -- clone, install, and run on both platforms in under a minute.
+A production-ready React Native boilerplate powered by Expo SDK 58 -- clone, install, and run on both platforms in under a minute.
 
 ## Prerequisites
 
@@ -164,16 +164,16 @@ oh-my-rn/
 
 | Layer | Technology | Version |
 |-------|-----------|---------|
-| Runtime | React Native | 0.86.x |
-| Framework | Expo | SDK 57 |
+| Runtime | React Native | 0.88.x |
+| Framework | Expo | SDK 58 |
 | Language | TypeScript | ~6.0 (strict mode) |
 | UI Framework | React | 19.x |
-| Navigation | Expo Router | SDK 57 (file-based) |
+| Navigation | Expo Router | SDK 58 (file-based) |
 | State Management | Zustand | v5 (with persist middleware) |
 | Storage (general) | AsyncStorage | v2 |
-| Storage (secure) | expo-secure-store | 57.x |
+| Storage (secure) | expo-secure-store | 58.x |
 | Icons | lucide-react-native | latest |
-| OTA updates | expo-updates + EAS Update | SDK 57 |
+| OTA updates | expo-updates + EAS Update | SDK 58 |
 | Testing | Jest + @testing-library/react-native | latest |
 | Linting/Formatting | Biome | latest |
 | Git Hooks | Husky + lint-staged | latest |
