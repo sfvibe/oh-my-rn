@@ -124,7 +124,7 @@ describe('app config EAS project ID', () => {
     for (const [name, profile] of Object.entries(buildProfiles)) {
       if (name === 'base') {
         expect(profile.env?.EAS_REQUIRE_PROJECT_ID).toBe('true');
-        expect(profile.node).toBe('24.x');
+        expect(profile.node).toBe('24.22.1');
         continue;
       }
 
